@@ -64,9 +64,6 @@ def all_supplies_in_holidays(holiday_hash)
        # list string
        list_string = list.join(', ')
        puts "  " + holiday_string + ": " + list_string
-      # day = holiday[0].to_s.capitalize + ": "
-      # supplies = holiday.to_s
-      #puts day + supplies
      end
   end
 end
@@ -78,11 +75,6 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |seasons, season_data|
     season_data.each do |holidays, data2|
       data2.each do |supply|
-        # test = supply.map
-        # holiday_return = test.find { |s| s == "BBQ"}
-        # if holiday_return == "BBQ"
-        #  return holidays
-        # end
         if supply.include?("BBQ")
           holiday_return.push(holidays)
         end
