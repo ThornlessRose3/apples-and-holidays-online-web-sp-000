@@ -82,7 +82,9 @@ def all_holidays_with_bbq(holiday_hash)
         # if holiday_return == "BBQ"
         #  return holidays
         # end
-        if supply.
+        if supply.find("BBQ") == "BBQ"
+          return holidays
+        end
       end
     end
   end
