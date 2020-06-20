@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
     # name = season[0].to_s.capitalize + ":"
     puts season.to_s.capitalize + ":"
      data.each do |holiday, list|
-       puts holiday.to_s.capitalize + ": #{list}"
+       puts "   " + holiday.to_s.capitalize + ": " + list.flatten.to_s
       # day = holiday[0].to_s.capitalize + ": "
       # supplies = holiday.to_s
       #puts day + supplies
