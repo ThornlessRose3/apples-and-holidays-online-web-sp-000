@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
        holiday_string = holiday.to_s
        holiday_string = holiday_string.split('_').map(&:capitalize).join(' ')
        # list string
-       list_string = list.map
+       list_string = list.join(', ')
        # i = 0
        # while list.length > i
         # list_string = list_string + list[i].to_s 
