@@ -77,8 +77,9 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |seasons|
     seasons.each do |holidays, data|
       puts data
-      data.find do |supply|
-        supply.map
+      data.each do |supply|
+        test = supply.map
+        test.find { |s| 
         if supply == "BBQ"
           return holidays
         end
