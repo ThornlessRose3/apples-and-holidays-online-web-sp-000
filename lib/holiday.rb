@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
           list_string = list_string + ", "
         end
        end
-       puts "   " + holiday.to_s.capitalize + ": " + list_string
+       puts " " + holiday.to_s.capitalize + ": " + list_string
       # day = holiday[0].to_s.capitalize + ": "
       # supplies = holiday.to_s
       #puts day + supplies
