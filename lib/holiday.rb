@@ -58,6 +58,9 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, data|
     puts season.to_s.capitalize + ":"
      data.each do |holiday, list|
+       holiday_string = ""
+       
+       # list string
        list_string = ""
        i = 0
        while list.length > i
@@ -67,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
           list_string = list_string + ", "
         end
        end
-       puts "  " + holiday.to_s.titleize + ": " + list_string
+       puts "  " + holiday_string + ": " + list_string
       # day = holiday[0].to_s.capitalize + ": "
       # supplies = holiday.to_s
       #puts day + supplies
