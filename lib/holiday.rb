@@ -58,7 +58,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, data|
     puts season.to_s.capitalize + ":"
      data.each do |holiday, list|
-       holiday_string = holiday.capitalize
+       holiday_string = holiday.to_s.capitalize
        holiday_string = holiday_string.gsub(/\W/, ' ')
        # if holiday_string.
        # temp = holiday_string.split('_')
